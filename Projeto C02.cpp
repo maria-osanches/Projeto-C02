@@ -20,7 +20,7 @@ void escolhaAuditorio();
 
 void verificarVidas() {
     if (vidas <= 0) {
-        cout << "Você perdeu todas as suas vidas. Você sente o vírus se espalhando pelo seu corpo e te transformando lentamente, fim de jogo." << endl;
+        cout << "VocÃª perdeu todas as suas vidas. VocÃª sente o vÃ­rus se espalhando pelo seu corpo e te transformando lentamente, fim de jogo." << endl;
         exit(0);
     }
 }
@@ -34,23 +34,23 @@ int main() {
 }
 
 void finalCura() {
-    cout << "Parabéns! Você encontrou a cura para o vírus zumbi e salvou a humanidade. Fim de jogo." << endl;
+    cout << "ParabÃ©ns! VocÃª encontrou a cura para o vÃ­rus zumbi e salvou a humanidade. Fim de jogo." << endl;
     exit(0);
 }
 
 void inicio() {
-    cout << "Último Suspiro" << endl;
-    cout << "Você é um aluno que ficou até tarde na biblioteca fazendo um projeto de Algoritmos I." << endl;
-    cout << "Ao sair da biblioteca, você percebe que algo estranho aconteceu: um apocalipse zumbi começou!" << endl;
-    cout << "Agora você precisa sobreviver e tentar encontrar a cura para o vírus zumbi." << endl;
-    cout << "Você tem " << vidas << " vidas." << endl;
+    cout << "Ãšltimo Suspiro" << endl;
+    cout << "VocÃª Ã© um aluno que ficou atÃ© tarde na biblioteca fazendo um projeto de Algoritmos I." << endl;
+    cout << "Ao sair da biblioteca, vocÃª percebe que algo estranho aconteceu: um apocalipse zumbi comeÃ§ou!" << endl;
+    cout << "Agora vocÃª precisa sobreviver e tentar encontrar a cura para o vÃ­rus zumbi." << endl;
+    cout << "VocÃª tem " << vidas << " vidas." << endl;
     cout << endl;
 
     escolhaBiblioteca();
 }
 
 void escolhaBiblioteca() {
-    cout << "Você está na biblioteca. O que você faz?" << endl;
+    cout << "VocÃª estÃ¡ na biblioteca. O que vocÃª faz?" << endl;
     cout << "1. Sair da biblioteca e ir para o corredor" << endl;
     cout << "2. Procurar por um esconderijo seguro na biblioteca" << endl;
 
@@ -62,26 +62,26 @@ void escolhaBiblioteca() {
             escolhaCorredor();
             break;
         case 2:
-            cout << "Você encontrou um esconderijo seguro na biblioteca e decidiu esperar. No entanto, os zumbis eventualmente te encontram. Você perde uma vida." << endl;
+            cout << "VocÃª encontrou um esconderijo seguro na biblioteca e decidiu esperar. No entanto, os zumbis eventualmente te encontram. VocÃª perde uma vida." << endl;
             vidas--;
             verificarVidas();
             escolhaBiblioteca();
             break;
         default:
-            cout << "Escolha inválida, tente novamente." << endl;
+            cout << "Escolha invÃ¡lida, tente novamente." << endl;
             escolhaBiblioteca();
             break;
     }
 }
 
 void escolhaCorredor() {
-    cout << "Você está no corredor. O que você faz?" << endl;
-    cout << "1. Ir para a sala de aula mais próxima" << endl;
-    cout << "2. Ir para o laboratório de informática" << endl;
-    cout << "3. Ir para a saída do prédio" << endl;
-    cout << "4. Ir para o refeitório" << endl;
+    cout << "VocÃª estÃ¡ no corredor. O que vocÃª faz?" << endl;
+    cout << "1. Ir para a sala de aula mais prÃ³xima" << endl;
+    cout << "2. Ir para o laboratÃ³rio de informÃ¡tica" << endl;
+    cout << "3. Ir para a saÃ­da do prÃ©dio" << endl;
+    cout << "4. Ir para o refeitÃ³rio" << endl;
     cout << "5. Ir para a secretaria" << endl;
-    cout << "6. Ir para o auditório" << endl;
+    cout << "6. Ir para o auditÃ³rio" << endl;
 
     int escolha;
     cin >> escolha;
@@ -106,14 +106,14 @@ void escolhaCorredor() {
             escolhaAuditorio();
             break;
         default:
-            cout << "Escolha inválida, tente novamente." << endl;
+            cout << "Escolha invÃ¡lida, tente novamente." << endl;
             escolhaCorredor();
             break;
     }
 }
 
 void escolhaSalaAula() {
-    cout << "Você entrou na sala de aula e percebe que há zumbis do lado de fora. O que você faz?" << endl;
+    cout << "VocÃª entrou na sala de aula e percebe que hÃ¡ zumbis do lado de fora. O que vocÃª faz?" << endl;
     cout << "1. Esconder-se na sala de aula" << endl;
     cout << "2. Tentar sair e voltar para o corredor" << endl;
 
@@ -128,16 +128,16 @@ void escolhaSalaAula() {
             escolhaCorredor();
             break;
         default:
-            cout << "Escolha inválida, tente novamente." << endl;
+            cout << "Escolha invÃ¡lida, tente novamente." << endl;
             escolhaSalaAula();
             break;
     }
 }
 
 void escolhaLabInformatica() {
-    cout << "Você está no laboratório de informática. Você vê alguns computadores ligados." << endl;
+    cout << "VocÃª estÃ¡ no laboratÃ³rio de informÃ¡tica. VocÃª vÃª alguns computadores ligados." << endl;
     cout << "1. Usar um computador para tentar pedir ajuda" << endl;
-    cout << "2. Esconder-se no laboratório" << endl;
+    cout << "2. Esconder-se no laboratÃ³rio" << endl;
     cout << "3. Voltar para o corredor" << endl;
 
     int escolha;
@@ -145,13 +145,13 @@ void escolhaLabInformatica() {
 
     switch (escolha) {
         case 1:
-            cout << "Você tenta usar um dos computadores, mas infelizmente, a conexão com a internet caiu. Os zumbis te encontram e você perde uma vida." << endl;
+            cout << "VocÃª tenta usar um dos computadores, mas infelizmente, a conexÃ£o com a internet caiu. Os zumbis te encontram e vocÃª perde uma vida." << endl;
             vidas--;
             verificarVidas();
             escolhaLabInformatica();
             break;
         case 2:
-            cout << "Você encontra um lugar para se esconder no laboratório e decide esperar. No entanto, os zumbis eventualmente te encontram. Você perde uma vida." << endl;
+            cout << "VocÃª encontra um lugar para se esconder no laboratÃ³rio e decide esperar. No entanto, os zumbis eventualmente te encontram. VocÃª perde uma vida." << endl;
             vidas--;
             verificarVidas();
             escolhaLabInformatica();
@@ -160,43 +160,43 @@ void escolhaLabInformatica() {
             escolhaCorredor();
             break;
         default:
-            cout << "Escolha inválida, tente novamente." << endl;
+            cout << "Escolha invÃ¡lida, tente novamente." << endl;
             escolhaLabInformatica();
             break;
     }
 }
 
 void escolhaSaida() {
-    cout << "Você está próximo à saída do prédio, mas há vários zumbis bloqueando o caminho." << endl;
+    cout << "VocÃª estÃ¡ prÃ³ximo Ã  saÃ­da do prÃ©dio, mas hÃ¡ vÃ¡rios zumbis bloqueando o caminho." << endl;
     cout << "1. Tentar sair discretamente" << endl;
-    cout << "2. Procurar uma saída alternativa" << endl;
+    cout << "2. Procurar uma saÃ­da alternativa" << endl;
 
     int escolha;
     cin >> escolha;
 
     switch (escolha) {
         case 1:
-            cout << "Você tenta sair discretamente, mas os zumbis te veem e te atacam. Você perde uma vida." << endl;
+            cout << "VocÃª tenta sair discretamente, mas os zumbis te veem e te atacam. VocÃª perde uma vida." << endl;
             vidas--;
             verificarVidas();
             escolhaSaida();
             break;
         case 2:
-            cout << "Você encontra uma janela no primeiro andar e consegue escapar do prédio. No entanto, os zumbis te encontram do lado de fora e você perde uma vida." << endl;
+            cout << "VocÃª encontra uma janela no primeiro andar e consegue escapar do prÃ©dio. No entanto, os zumbis te encontram do lado de fora e vocÃª perde uma vida." << endl;
             vidas--;
             verificarVidas();
             escolhaSaida();
             break;
         default:
-            cout << "Escolha inválida, tente novamente." << endl;
+            cout << "Escolha invÃ¡lida, tente novamente." << endl;
             escolhaSaida();
             break;
     }
 }
 
 void escolhaEsconderijo() {
-    cout << "Você encontrou um bom lugar para se esconder na sala de aula." << endl;
-    cout << "1. Esperar até que os zumbis vão embora" << endl;
+    cout << "VocÃª encontrou um bom lugar para se esconder na sala de aula." << endl;
+    cout << "1. Esperar atÃ© que os zumbis vÃ£o embora" << endl;
     cout << "2. Tentar sair e voltar para o corredor" << endl;
 
     int escolha;
@@ -204,7 +204,7 @@ void escolhaEsconderijo() {
 
     switch (escolha) {
         case 1:
-            cout << "Você esperou pacientemente, mas os zumbis acabaram te encontrando. Você perde uma vida." << endl;
+            cout << "VocÃª esperou pacientemente, mas os zumbis acabaram te encontrando. VocÃª perde uma vida." << endl;
             vidas--;
             verificarVidas();
             escolhaEsconderijo();
@@ -213,15 +213,15 @@ void escolhaEsconderijo() {
             escolhaCorredor();
             break;
         default:
-            cout << "Escolha inválida, tente novamente." << endl;
+            cout << "Escolha invÃ¡lida, tente novamente." << endl;
             escolhaEsconderijo();
             break;
     }
 }
 
 void escolhaRefeitorio() {
-    cout << "Você entrou no refeitório. Há comida e água suficientes para se manter por um tempo, mas também há zumbis lá fora." << endl;
-    cout << "1. Esconder-se no refeitório" << endl;
+    cout << "VocÃª entrou no refeitÃ³rio. HÃ¡ comida e Ã¡gua suficientes para se manter por um tempo, mas tambÃ©m hÃ¡ zumbis lÃ¡ fora." << endl;
+    cout << "1. Esconder-se no refeitÃ³rio" << endl;
     cout << "2. Tentar pegar comida e voltar para o corredor" << endl;
 
     int escolha;
@@ -229,26 +229,26 @@ void escolhaRefeitorio() {
 
     switch (escolha) {
         case 1:
-            cout << "Você encontra um lugar seguro no refeitório e decide se esconder. No entanto, os zumbis eventualmente te encontram. Você perde uma vida." << endl;
+            cout << "VocÃª encontra um lugar seguro no refeitÃ³rio e decide se esconder. No entanto, os zumbis eventualmente te encontram. VocÃª perde uma vida." << endl;
             vidas--;
             verificarVidas();
             escolhaRefeitorio();
             break;
         case 2:
-            cout << "Você tenta pegar comida, mas os zumbis te encontram e você perde uma vida." << endl;
+            cout << "VocÃª tenta pegar comida, mas os zumbis te encontram e vocÃª perde uma vida." << endl;
             vidas--;
             verificarVidas();
             escolhaRefeitorio();
             break;
         default:
-            cout << "Escolha inválida, tente novamente." << endl;
+            cout << "Escolha invÃ¡lida, tente novamente." << endl;
             escolhaRefeitorio();
             break;
     }
 }
 
 void escolhaSecretaria() {
-    cout << "Você entrou na secretaria. Há documentos e telefones aqui." << endl;
+    cout << "VocÃª entrou na secretaria. HÃ¡ documentos e telefones aqui." << endl;
     cout << "1. Usar um telefone para tentar pedir ajuda" << endl;
     cout << "2. Esconder-se na secretaria" << endl;
     cout << "3. Voltar para o corredor" << endl;
@@ -258,13 +258,13 @@ void escolhaSecretaria() {
 
     switch (escolha) {
         case 1:
-            cout << "Você tenta usar o telefone, mas a linha está morta. Os zumbis te encontram e você perde uma vida." << endl;
+            cout << "VocÃª tenta usar o telefone, mas a linha estÃ¡ morta. Os zumbis te encontram e vocÃª perde uma vida." << endl;
             vidas--;
             verificarVidas();
             escolhaSecretaria();
             break;
         case 2:
-            cout << "Você encontra um lugar seguro na secretaria e decide se esconder. No entanto, os zumbis eventualmente te encontram. Você perde uma vida." << endl;
+            cout << "VocÃª encontra um lugar seguro na secretaria e decide se esconder. No entanto, os zumbis eventualmente te encontram. VocÃª perde uma vida." << endl;
             vidas--;
             verificarVidas();
             escolhaSecretaria();
@@ -273,16 +273,16 @@ void escolhaSecretaria() {
             escolhaCorredor();
             break;
         default:
-            cout << "Escolha inválida, tente novamente." << endl;
+            cout << "Escolha invÃ¡lida, tente novamente." << endl;
             escolhaSecretaria();
             break;
     }
 }
 
 void escolhaAuditorio() {
-    cout << "Você entrou no auditório. É um espaço grande e aberto." << endl;
-    cout << "1. Esconder-se no auditório" << endl;
-    cout << "2. Tentar encontrar uma saída alternativa pelo auditório" << endl;
+    cout << "VocÃª entrou no auditÃ³rio. Ã‰ um espaÃ§o grande e aberto." << endl;
+    cout << "1. Esconder-se no auditÃ³rio" << endl;
+    cout << "2. Tentar encontrar uma saÃ­da alternativa pelo auditÃ³rio" << endl;
     cout << "3. Voltar para o corredor" << endl;
 
     int escolha;
@@ -290,20 +290,20 @@ void escolhaAuditorio() {
 
     switch (escolha) {
         case 1:
-            cout << "Você encontra um lugar para se esconder no auditório e decide esperar. No entanto, os zumbis eventualmente te encontram. Você perde uma vida." << endl;
+            cout << "VocÃª encontra um lugar para se esconder no auditÃ³rio e decide esperar. No entanto, os zumbis eventualmente te encontram. VocÃª perde uma vida." << endl;
             vidas--;
             verificarVidas();
             escolhaAuditorio();
             break;
         case 2:
-            cout << "Você encontra uma saída alternativa e, ao explorar, descobre um laboratório secreto com a cura para o vírus zumbi. Parabéns, você encontrou a cura e salvou a humanidade!" << endl;
+            cout << "VocÃª encontra uma saÃ­da alternativa e, ao explorar, descobre um laboratÃ³rio secreto com a cura para o vÃ­rus zumbi. ParabÃ©ns, vocÃª encontrou a cura e salvou a humanidade!" << endl;
             finalCura();
             break;
         case 3:
             escolhaCorredor();
             break;
         default:
-            cout << "Escolha inválida, tente novamente." << endl;
+            cout << "Escolha invÃ¡lida, tente novamente." << endl;
             escolhaAuditorio();
             break;
     }
